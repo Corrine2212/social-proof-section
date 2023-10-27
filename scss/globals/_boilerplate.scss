@@ -1,0 +1,60 @@
+@use "../util" as u;
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: u.$font;
+  background: url(../../images/bg-pattern-top-mobile.svg) left top no-repeat,
+    url(../../images/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: u.rem(10);
+  font-size: u.rem(13);
+  text-align: center;
+
+  a {
+    color: var(--primary-clr-pink);
+  }
+}
+
+footer {
+  margin-bottom: u.rem(20);
+  text-align: center;
+}

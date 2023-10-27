@@ -1,0 +1,259 @@
+@import url(https://fonts.googleapis.com/css?family=League+Spartan:100,200,300,regular,500,600,700,800,900);
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+  background: url(../../images/bg-pattern-top-mobile.svg) left top no-repeat, url(../../images/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.625rem;
+  font-size: 0.8125rem;
+  text-align: center;
+}
+.attribution a {
+  color: var(--primary-clr-pink);
+}
+
+footer {
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+:root {
+  --primary-clr-magenta: hsl(300, 43%, 22%);
+  --primary-clr-pink: hsl(333, 80%, 67%);
+  --neutral-clr-700: hsl(303, 10%, 53%);
+  --neutral-clr-300: hsl(300, 24%, 96%);
+  --neutral-clr-100: hsl(0, 0%, 100%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 100px;
+  width: 100%;
+  gap: 3.125rem;
+}
+
+section {
+  width: 23.125rem;
+  min-width: 23.125rem;
+}
+
+.header {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+.header h1 {
+  color: var(--primary-clr-magenta);
+  font-size: 2.8125rem;
+  font-weight: 700;
+  margin-bottom: 1.5625rem;
+}
+.header h2 {
+  color: var(--neutral-clr-700);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.row-one {
+  width: 23.125rem;
+  min-width: 23.125rem;
+}
+
+.ratings-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.ratings__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  background-color: var(--neutral-clr-300);
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+}
+.ratings__card h3 {
+  color: var(--primary-clr-magenta);
+  font-size: 1.25rem;
+}
+
+.ratings__card-stars {
+  display: flex;
+  gap: 0.5rem;
+}
+.ratings__card-stars img {
+  width: 22px;
+}
+
+.reviews-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.reviews__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--primary-clr-magenta);
+  border-radius: 0.625rem;
+  padding: 2.5rem;
+  color: var(--neutral-clr-300);
+}
+.reviews__card p {
+  font-size: 1.125rem;
+  line-height: 25px;
+}
+
+.reviews__card-buyer-info {
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+  margin-bottom: 1.875rem;
+}
+.reviews__card-buyer-info h4 {
+  font-size: 1.25rem;
+  color: var(--neutral-clr-100);
+  font-weight: 500;
+  margin-bottom: 0.3125rem;
+}
+.reviews__card-buyer-info h5 {
+  font-size: 1rem;
+  color: var(--primary-clr-pink);
+  font-weight: 400;
+  letter-spacing: 0.0625rem;
+}
+.reviews__card-buyer-info img {
+  border-radius: 100%;
+  width: 3.4375rem;
+}
+
+.row-one {
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5625rem;
+}
+
+@media screen and (min-width: 1308px) {
+  body {
+    background: url("../../images/bg-pattern-top-desktop.svg") left top no-repeat, url("../../images/bg-pattern-bottom-desktop.svg") right bottom no-repeat;
+  }
+  main {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px 150px;
+    width: 100%;
+  }
+  .row-one {
+    display: flex;
+    flex-direction: row;
+    gap: 6.25rem;
+  }
+  .header {
+    text-align: left;
+  }
+  .header h1 {
+    font-size: 3.75rem;
+    margin-right: 6.25rem;
+  }
+  .header h2 {
+    margin-right: 8.75rem;
+  }
+  .ratings-wrapper .one {
+    align-self: start;
+  }
+  .ratings-wrapper .two {
+    align-self: center;
+  }
+  .ratings-wrapper .three {
+    align-self: end;
+  }
+  .ratings__card {
+    padding: 1.5625rem;
+    flex-direction: row;
+    width: 31.25rem;
+  }
+  .reviews-wrapper {
+    flex-direction: row;
+    height: 300px;
+  }
+  .reviews-wrapper .one {
+    align-self: start;
+  }
+  .reviews-wrapper .two {
+    align-self: center;
+  }
+  .reviews-wrapper .three {
+    align-self: end;
+  }
+  .reviews__card {
+    width: 100%;
+    height: 16.25rem;
+  }
+}/*# sourceMappingURL=style.css.map */

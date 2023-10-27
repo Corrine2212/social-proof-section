@@ -1,0 +1,23 @@
+@use 'sass:math';
+
+// this function will convert pixels to rem and append 'rem' to the end
+@function rem($pixel) {
+    // if pixel has unit, throw an error
+    @if math.is-unitless($pixel){
+        @return math.div($pixel, 16) + rem;
+    }
+    @else {                     
+        @error 'Don\'t use units when using the rem function';
+    }
+}
+
+
+@function em($pixel) {
+    // if pixel has unit, throw an error
+    @if math.is-unitless($pixel){
+        @return math.div($pixel, 16) + em;
+    }
+    @else {                     
+        @error 'Don\'t use units when using the em function';
+    }
+}
