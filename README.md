@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://www.frontendmentor.io/solutions/four-card-feature-section-using-html-and-css-f2Ia4Ywll_
-- Live page : https://corrine2212.github.io/four-card-feature-section/
+- Solution URL: https://www.frontendmentor.io/solutions/social-proof-section-using-html-and-scss-vFVxGremIf
+- Live page: https://corrine2212.github.io/social-proof-section/ 
 
 ## My process
 
